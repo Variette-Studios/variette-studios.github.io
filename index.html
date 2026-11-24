@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Variette Studios</title>
+<meta name="description" content="Variette Studios makes mobile games, including Pocket Hunter.">
+<link rel="icon" href="pocket-hunter/favicon.png">
+<style>
+  :root {
+    --bg: #f6f4ee;
+    --card: #ffffff;
+    --fg: #23281f;
+    --muted: #5d6656;
+    --accent: #256628;
+    --rule: #dcdccf;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151a14;
+      --card: #1d241b;
+      --fg: #e6eadf;
+      --muted: #a3ad98;
+      --accent: #7fc77f;
+      --rule: #33402f;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: 48px 16px 64px;
+  }
+  main { max-width: 40rem; margin: 0 auto; display: grid; gap: 24px; }
+  h1 { font-size: 2.2rem; line-height: 1.15; margin: 0; color: var(--accent); }
+  .tag { color: var(--muted); margin: 4px 0 0; }
+  h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 8px; }
+  .game {
+    display: flex; gap: 16px; align-items: center;
+    background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 16px;
+  }
+  .game img { width: 64px; height: 64px; border-radius: 14px; image-rendering: pixelated; flex: none; }
+  .game h3 { margin: 0; font-size: 1.15rem; }
+  .game p { margin: 2px 0 0; color: var(--muted); }
+  .game div { min-width: 0; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Variette Studios</h1>
+    <p class="tag">Small games, made with care.</p>
+  </header>
+  <section>
+    <h2>Games</h2>
+    <article class="game">
+      <img src="pocket-hunter/favicon.png" alt="Pocket Hunter icon">
+      <div>
+        <h3>Pocket Hunter</h3>
+        <p>A pixel-art idle monster-hunting adventure.</p>
+        <p><a href="pocket-hunter/privacy.html">Privacy policy</a></p>
+      </div>
+    </article>
+  </section>
+</main>
+</body>
+</html>
